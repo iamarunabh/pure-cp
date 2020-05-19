@@ -1,0 +1,86 @@
+$font-stack: "Roboto"
+$nav-font:    "Fira Code", sans-serif
+$primary-color: #333
+$white: #FFF
+$nav-base : #0c0f16
+$nav-grad-1: #fcb934
+$nav-grad-2: #f36921
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+body
+  font: 100% $font-stack
+  color: $primary-color
+
+button
+  font-family: 'Rubika', sans-serif
+
+#context-menu
+  background: $nav-base
+  border-radius: 15px
+
+  padding: 5px
+
+  position: absolute
+  user-select: none
+  
+  display: none
+  flex-direction: column
+  min-width: 300px
+
+  &.show
+    display: flex
+
+  .seperator
+    height: 2px
+    margin: 7.5px 5px
+    border-radius: 1px
+    background-color: rgba(255, 255, 255, .15)
+
+.menu-head
+  display: flex
+  align-items: center
+  justify-content: center
+
+  background-color: rgba(255, 255, 255, .1)
+  padding: 10px
+  margin: 5px
+  border-radius: 10px
+  margin-bottom: 10px
+
+  span
+    color: $white
+    font-weight: 300
+    font-size: 15px
+    margin-left: 15px
+
+  img
+    width: 30px
+    border-radius: 50%
+    pointer-events: none
+
+.button-container
+  display: flex
+  flex-direction: column
+
+  border-radius: 10px
+
+  button
+    font-weight: 300
+    font-size: 15px
+    color: $white
+
+    background: transparent
+    border-radius: 5px
+    border: none
+    outline: none
+
+    padding: 15px 30px
+    margin: 5px
+
+    &:hover
+      cursor: pointer
+      background: linear-gradient( 115deg, $nav-grad-1, $nav-grad-2 )

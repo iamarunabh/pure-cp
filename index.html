@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a breif description." />
+    <link rel="stylesheet" href="/sass/style.css" />
+    <link rel="stylesheet" href="/css/nav.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Pure Fun</title>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="nav-logo">Your Logo</div>
+        <ul class="nav-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About Me</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+    </nav>
+
+    <div class="nav-overlay"></div>
+    <dialog open>Hello World.</dialog>
+    <div class="site-container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam purus vel velit gravida, ut molestie
+            velit imperdiet. Morbi pharetra leo nec posuere faucibus. Suspendisse nec ante at est consequat fermentum.
+            Duis vel neque turpis. Nullam venenatis ex at elit mollis mattis. Donec aliquet accumsan maximus. Proin
+            cursus tortor eget ligula semper, et ultricies odio iaculis. Sed arcu erat, luctus eleifend lacinia vel,
+            ornare sed risus.</p>
+
+        <p>Duis eget molestie ligula. Suspendisse bibendum imperdiet sem, vel pellentesque dolor mattis eu. Mauris ut
+            mauris ac mauris finibus aliquam. Nulla facilisi. Sed ut elementum risus. Etiam quis porttitor mauris, sed
+            maximus nisl. Morbi ultricies convallis pulvinar. Nam vulputate turpis nec sem molestie, eu feugiat elit
+            ultricies. Donec vel suscipit ante. Aenean elit ligula, suscipit et mauris vel, dignissim egestas felis.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam purus vel velit gravida, ut molestie
+            velit imperdiet. Morbi pharetra leo nec posuere faucibus. Suspendisse nec ante at est consequat fermentum.
+            Duis vel neque turpis. Nullam venenatis ex at elit mollis mattis. Donec aliquet accumsan maximus. Proin
+            cursus tortor eget ligula semper, et ultricies odio iaculis. Sed arcu erat, luctus eleifend lacinia vel,
+            ornare sed risus.</p>
+    </div>
+    <div class="site-container">
+        <footer>
+            <details>
+                <summery>
+                    About Me
+                </summery>
+                <p>I am Arunabh From <abbr title="India"> India</abbr></p>
+
+                <address>
+                    Delhi 110001,
+                    India
+                </address>
+            </details>
+        </footer>
+    </div>
+    <div id="context-menu" class="show">
+        <div class="menu-head">
+            <span>
+                @am.i.rahu
+            </span>
+        </div>
+
+        <div class="seperator"></div>
+        <div class="button-container">
+            <button onclick="onBack()">Back</button>
+            <button onclick="onForward()">Forwads</button>
+            <button onclick="onReload()">Reload</button>
+
+            <div class="seperator"></div>
+
+            <button onclick="onClose()">Close</button>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
